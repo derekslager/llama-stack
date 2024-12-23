@@ -33,6 +33,7 @@ from llama_stack.apis.scoring_functions import *  # noqa: F403
 from llama_stack.apis.shields import *  # noqa: F403
 from llama_stack.apis.synthetic_data_generation import *  # noqa: F403
 from llama_stack.apis.telemetry import *  # noqa: F403
+from llama_stack.apis.tools import *  # noqa: F403
 from llama_stack.distribution.datatypes import StackRunConfig
 from llama_stack.distribution.distribution import get_provider_registry
 from llama_stack.distribution.resolver import ProviderRegistry, resolve_impls
@@ -63,6 +64,8 @@ class LlamaStack(
     Models,
     Shields,
     Inspect,
+    ToolGroups,
+    ToolRuntime,
 ):
     pass
 
